@@ -16,5 +16,5 @@ resource "aws_iam_openid_connect_provider" "eks_oidc_provider" {
       Name = "${var.project_name}-eks-oidc-provider"
     }
   )
-  
+
 }

@@ -10,5 +10,5 @@ resource "aws_iam_policy" "aws_controller_policy" {
       Name = "${var.project_name}-aws-controller-policy"
     }
   )
-  
+
 }

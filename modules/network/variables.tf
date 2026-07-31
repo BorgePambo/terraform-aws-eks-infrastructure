@@ -1,10 +1,10 @@
 variable "cidr_block" {
-  type = string
+  type        = string
   description = "Network cidr block for the VPC"
 }
 
 variable "project_name" {
-  type = string
+  type        = string
   description = "Project name for the VPC"
 }
 

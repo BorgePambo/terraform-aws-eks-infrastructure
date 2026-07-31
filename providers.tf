@@ -12,12 +12,12 @@ terraform {
 
   }
 
-  backend "s3"{
+  backend "s3" {
     bucket = "terraform-state-eks"
     key    = "terraform.tfstate"
     region = "us-east-1"
   }
-  
+
 }
 
 
@@ -34,11 +34,9 @@ provider "kubernetes" {
     args        = ["eks", "get-token", "--cluster-name", module.eks_cluster.cluster_name]
     command     = "aws"
   }
-
 }
 
 
-terr
 
 provider "helm" {
   kubernetes {

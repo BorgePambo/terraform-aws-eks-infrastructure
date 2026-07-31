@@ -1,7 +1,7 @@
 
 
 variable "project_name" {
-  type = string
+  type        = string
   description = "Project name for the VPC"
 }
 
@@ -10,12 +10,12 @@ variable "tags" {
   description = "Tags to apply to AWS resources"
 }
 
-variable "public_subnet_1a"{
-  type = string
+variable "public_subnet_1a" {
+  type        = string
   description = "subnet to create eks cluster in AZ 1a"
 }
 
-variable "public_subnet_1b"{
-  type = string
+variable "public_subnet_1b" {
+  type        = string
   description = "subnet to create eks cluster in AZ 1b"
 }

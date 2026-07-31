@@ -19,12 +19,12 @@ resource "aws_route_table" "eks_public_route_table" {
   }
 
 
-    tags = merge(
-        var.tags,
-        {
-        Name = "${var.project_name}-public-route-table"
-        }
-    )
+  tags = merge(
+    var.tags,
+    {
+      Name = "${var.project_name}-public-route-table"
+    }
+  )
 
 }
 
